@@ -2,5 +2,7 @@
 source /etc/skel/.profile
 
 # Add paths
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.Software/lua-language-server/bin/"
+if [[ $PATH != *$HOME/.local/bin* ]]; then
+    export PATH="$PATH:$HOME/.local/bin"
+fi
+export PATH="$PATH:$HOME/.Software/lua-language-server/bin"
