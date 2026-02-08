@@ -2,9 +2,11 @@
 source /etc/skel/.bashrc
 
 # Create aliases
-alias update="sudo apt update; sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
-alias py="python3"
 alias ar="arduino-cli"
+alias la="ls -a"
+alias ll="ls -la"
+alias py="python3"
+alias update="sudo apt update; sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
 
 # Create function to open Neovim and reset cursor on exit
 ed() {
