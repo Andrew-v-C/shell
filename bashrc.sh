@@ -13,3 +13,10 @@ ed() {
     ~/.Software/Neovim/bin/nvim $1
     echo -ne "\033[5 q"
 }
+
+calc() {
+    cd ~/Projects/PythonLab
+    if [[ $? ]]; then
+        source .venv/bin/activate
+    fi
+}
