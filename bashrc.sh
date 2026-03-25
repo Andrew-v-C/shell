@@ -17,6 +17,6 @@ ed() {
 calc() {
     cd ~/Projects/PythonLab
     if [[ $? ]]; then
-        source .PythonLab_venv/bin/activate
+        source .PythonLab-venv/bin/activate
     fi
 }
