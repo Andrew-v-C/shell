@@ -5,18 +5,6 @@ source /etc/skel/.bashrc
 
 # Create aliases
 alias ar="arduino-cli"
+alias ed="nvim"
 alias py="python3"
 alias update="sudo apt update; sudo apt upgrade; sudo apt autoremove; sudo apt autoclean"
-
-# Create function to open Neovim and reset cursor on exit
-ed() {
-    ~/.Software/Neovim/bin/nvim $1
-    echo -ne "\033[5 q"
-}
-
-calc() {
-    cd ~/Projects/PythonLab
-    if [[ $? ]]; then
-        source .PythonLab-venv/bin/activate
-    fi
-}
