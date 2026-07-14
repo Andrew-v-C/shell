@@ -4,6 +4,7 @@
 source /etc/skel/.bashrc
 
 # Create aliases
+alias ar="arduino-cli"
 alias dl="wget -P ~/Downloads"
 alias ed="nvim"
 alias py="python3"
